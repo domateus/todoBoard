@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+html {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #cad79c;
+  color: white;
+}
+
+.boards {
+  display: flex;
+}
+
+.board {
+  background-color: #6c9eb2;
+  border: 2px solid #18333e11;
+  border-radius: 4px;
+  margin: 0 16px;
+  margin-top: 32px;
+}
+
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #ffffffcc;
+  letter-spacing: 2px;
+}
+
+.board .dropzone {
+  padding: 16px;
+  min-width: 282px;
+  min-height: 200px;
+}
+
+.board .card {
+  padding: 16px;
+  background: #3C809A;
+  box-shadow: 0 3px 4px -2px #cddee5cc;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.status {
+  width: 30px;
+  height: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.status.blue {
+  background-color: blue;
+}
+
+.status.green {
+  background-color: green;
+}
+
+.status.red {
+  background-color: red;
+}
+
+.highlight {
+  background: #E79A9427;
+}
+
+.card, .dropzone {
+  transition: .4s;
+}
+
+.dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background-color: #acb5c721;
+}
